@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Kaushan+Script&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Kaushan+Script&family=League+Gothic&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color1:#FC3746;
+}
+
+.head{
+	/* position: sticky;
+    top: 0px; */
+    background-color: black;
+    color: white;
+}
+.logo{
+    font-family: "Kaushan Script", serif;
+    color: var(--color1);
+}
+.mainmenu{
+    width: 40%;
+}
+
+
+#offcanvastop{
+    background-color: gray;
+    height: 300px;
+}
+
+.home-section{
+    background-color: black;
+
+}
+
+
+.home{
+    color: white;
+    padding: 20px;
+}
+.home p{
+    font-family: "Kaushan Script", serif;
+    color: var(--color1);
+    font-size: 19px;
+}
+
+.home h1{
+    font-family: 'League Gothic', sans-serif;
+
+}
+.btn1{
+    background-color: var(--color1);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+}
+.home1{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.home1 div{
+    border: 1px solid gray;
+    width: 73px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home1 p{
+    font-size: 12px;
+}
+.first img{
+    width: 30%;
+    height: 30%;
+}
+.first{
+    background-color: rgb(92, 92, 92);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 40px 20px;
+    padding: 20px 10px 20px 10px;
+    color: white;
+}
+
+.shop-section,.about-section,.contact-section , .sale{
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+.shop img{
+    height: 150px;
+    width: 120px;
+}
+
+.about-p{
+    font-family: "Kaushan Script", serif;
+    color: var(--color1);
+    font-size: 20px;
+    padding: 20px;
+}
+.about-p,.about-head{
+    text-align: center;
+}
+
+.div1{
+    background-image: url('../Images/about-02.jpg');
+    background-repeat: no-repeat;
+    /* margin: 20px; */
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+}
+.about-data{
+    /* padding: 20px; */
+}
+.data1 p, .salep{
+    font-family: "Kaushan Script", serif;
+    font-size: 20px;
+
+}
+.data1 h1, .salep{
+    color: var(--color1);
+
+}
+.about-head, .shop-h, .sale h1{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 60px;
+
+}
+.data2{
+    padding: 10px;
+}
+.contact1{
+    text-align: center;
+}
+.contact1 h1{
+    text-transform: uppercase;
+}
+.contact2 input{
+    width: 100%;
+    height: 45px;
+}
+.sale{
+    text-align: center;
+}
+.sale h1{
+    text-transform: uppercase;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+
+@media(min-width:768px){
+    .home{
+        padding: 30px;
+    }
+    .home h1{
+        font-size: 70px;
+    }
+    .home1{
+        padding: 15px;
+    }
+    .home1 div{
+        width: 170px;
+        height: 170px;
+    }
+    .home1 h1{
+        font-size: 50px;
+    }
+    .home1 p{
+        font-size: 18px;
+    }
+    .first{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 30px 40px 30px 40px;
+    }
+    .first div{
+        width: 40%;
+        text-align: start;
+    }
+    .first img{
+        width: 40%;
+        height: 40%;
+    }
+    .shop img{
+        height: 250px;
+        width: 220px;
+    }
+    
+    .data1 h1{
+        font-size: 40px;
+    }
+    .data1 p{
+        font-size: 30px;
+    }
+    .data2 h2{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .about-head, .shop-h{
+        font-size: 100px;
+       }
+
+       .contact1{
+        width: 50%;
+        text-align: left;
+       }
+       .contact2{
+        width: 50%;
+       }
+       .sale{
+        padding: 0px 80px 70px 80px;
+       }
+       
+}
+
+@media(min-width:992px){
+    nav{
+        position: sticky;
+        top: 0px;
+    }
+    .home1{
+        justify-content: space-evenly;
+    }
+    .first{
+        padding: 30px 80px 30px 80px;
+    }
+    .shop img{
+        height: 270px;
+        width: 220px;
+    }
+    .div1{
+        height: 300px;
+    }
+    .data1 h1{
+        font-size: 60px;
+    }
+    
+}
+
+@media(min-width:1200px){
+    .first{
+        margin: 70px;
+    }
+    .shop img{
+        height: 330px;
+        width: 270px;
+    }
+    .div1{
+        height: 400px;
+    }
+    .div1{
+        margin: 40px;
+    }
+   .about-data{
+    padding: 0px 40px 40px 40px;
+   }
+   
+   .data1 h1{
+    font-size: 50px;
+   }
+   .salep{
+    font-size: 30px;
+   }
+   .sale h1{
+    font-size: 80px;
+   }
+   .sale{
+    padding: 0px 180px 70px 180px;
+   }
+}
